@@ -1,10 +1,10 @@
-# Python on Wheezy in a docker container
+# Ansible playbook executable via docker
 
-An ansible-playbook as an etnr
+A Dockerfile with ansible-playbook as entrypoint.
 
 ## Getting Started
 
-Assuming Docker is installed and in case you want to interact inside the container:
+How to use it:
 
 ```shell
 docker container run --rm -it nffdiogosilva/ansible-playbook [options] playbook.yml
