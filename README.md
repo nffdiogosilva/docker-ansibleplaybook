@@ -7,12 +7,12 @@ A Dockerfile with ansible-playbook as entrypoint.
 How to use it:
 
 ```shell
-docker container run --rm -it nffdiogosilva/ansible-playbook [options] playbook.yml
+docker container run --rm -it -v $(pwd):/repository nffdiogosilva/ansible-playbook [options] playbook.yml
 ```
 
 I suggest creating an alias on your bash_profile, like this:
 ```shell
-alias ansible-playbook="docker container run --rm -it nffdiogosilva/ansible-playbook"
+alias ansible-playbook="docker container run --rm -it -v $(pwd):/repository nffdiogosilva/ansible-playbook"
 ```
 
 ## License
